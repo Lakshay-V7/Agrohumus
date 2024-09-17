@@ -61,7 +61,6 @@ Real-Time Responses: The chatbot uses advanced natural language processing to un
 
 ![WhatsApp Image 2024-09-17 at 12 10 15_64903da0](https://github.com/user-attachments/assets/7bfa57a2-2d46-4020-8b67-607b699e51af)
 
-# RESULTS:
 
 
 
