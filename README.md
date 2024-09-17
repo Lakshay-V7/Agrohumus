@@ -1,2 +1,8 @@
-# Agrohumus
-Developed tools to boost crop productivity, including a Recommendation System for optimized growth, Disease Prediction for early intervention, and a 24/7 Chatbot for constant support and insights. These solutions enhance agricultural practices, improving both productivity and disease management.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

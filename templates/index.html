@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Fresh Tomato</title>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />         -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link href="{{url_for('static',filename='style.css')}}" rel="stylesheet"> 
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">   
+</head>
+<body>
+  <div class="navbar">
+    <img src="{{url_for('static',filename='img.jpg')}}" alt="Logo" class="navbar-logo"> <!-- Replace 'your-logo.png' with the path to your logo image -->
+ 
+  </div>
+      <div class="content">
+        <h1 class="hero-head hidden-bottom">Welcome to Agro Humus</h1>
+        <p class="hero-sec hidden-bottom">Empowering Farmers and Gardeners for Bountiful and Healthy Harvests</p>
+        <p class="hero-sec hidden-bottom">Your Health Checker for Plants and Crops</p>
+        <div class="btn-grp hidden-bottom">
+    <form method="post" action="/" enctype="multipart/form-data" onsubmit="setSubmit()">
+            <!-- <button class="upload-btn" onclick="document.getElementById('file-input').click()">Upload Photo</button> -->
+            <!-- <input type="file" name="file" id="file-input"> -->
+            <!-- <label for="file-input">Upload File</label> -->
+            <!-- <input id="file-input" type="file" value="Upload" name="file" class="form-control" autocomplete="off" required> -->
+            <!-- <input type="file" name="file" class="form-control" autocomplete="off" required id="file-input" style="display:none" accept="image/*"> -->
+            
+            
+                    <input type="file" value="Upload" name="file" class="form-control" autocomplete="off" required onchange="fileSelected()" id="file-input">
+                    <label for="file-input">Upload File</label>
+
+                <button type="submit" value="Submit"  class="not-submit" onclick="setSubmit()" >Submit</button>
+
+            </form>
+        </div>
+      </div>
+        
+      
+
+<script>
+          function fileSelected() {
+            var submitBtn = document.querySelector('.not-submit');
+            submitBtn.classList.remove('not-submit');
+            submitBtn.classList.add('submit');
+        }
+    function setSubmit() {
+    var report = document.querySelector('.final-report-inv');
+
+    if (report) {
+        report.classList.remove('final-report-inv');
+        report.classList.add('final-report');
+    }
+    return false;
+}
+
+
+
+</script>
+<script src="{{ url_for('static', filename='animate.js') }}"></script>
+
+
+</body>
+</html>
